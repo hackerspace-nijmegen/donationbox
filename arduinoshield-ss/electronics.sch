@@ -1,0 +1,325 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:electronics-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 5AFC3B99
+P 5450 4200
+F 0 "R1" V 5530 4200 50  0000 C CNN
+F 1 "470R" V 5450 4200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5380 4200 50  0001 C CNN
+F 3 "" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5AFC3C4C
+P 5750 4700
+F 0 "R2" V 5830 4700 50  0000 C CNN
+F 1 "1k" V 5750 4700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5680 4700 50  0001 C CNN
+F 3 "" H 5750 4700 50  0001 C CNN
+	1    5750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC337 Q1
+U 1 1 5AFC3CE9
+P 6300 4200
+F 0 "Q1" H 6500 4275 50  0000 L CNN
+F 1 "BC337" H 6500 4200 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6500 4125 50  0001 L CIN
+F 3 "" H 6300 4200 50  0001 L CNN
+	1    6300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5AFC4041
+P 7550 3100
+F 0 "J5" H 7550 3200 50  0000 C CNN
+F 1 "Led" H 7550 2900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5AFC41A6
+P 5500 3200
+F 0 "J4" H 5500 3300 50  0000 C CNN
+F 1 "Batt" H 5500 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5500 3200 50  0001 C CNN
+F 3 "" H 5500 3200 50  0001 C CNN
+	1    5500 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AFC424D
+P 5800 3400
+F 0 "#PWR01" H 5800 3150 50  0001 C CNN
+F 1 "GND" H 5800 3250 50  0000 C CNN
+F 2 "" H 5800 3400 50  0001 C CNN
+F 3 "" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4200 6100 4200
+Wire Wire Line
+	5750 4550 5750 4200
+Connection ~ 5750 4200
+Wire Wire Line
+	5750 4950 5750 4850
+Wire Wire Line
+	7350 3200 6400 3200
+Wire Wire Line
+	6400 3200 6400 4000
+Wire Wire Line
+	5700 3200 5800 3200
+Wire Wire Line
+	5800 3200 5800 3400
+$Comp
+L GND #PWR02
+U 1 1 5AFC42AB
+P 4000 5050
+F 0 "#PWR02" H 4000 4800 50  0001 C CNN
+F 1 "GND" H 4000 4900 50  0000 C CNN
+F 2 "" H 4000 5050 50  0001 C CNN
+F 3 "" H 4000 5050 50  0001 C CNN
+	1    4000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J3
+U 1 1 5AFD45B6
+P 5250 5400
+F 0 "J3" H 5250 5600 50  0000 C CNN
+F 1 "opt1" H 5250 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5250 5400 50  0001 C CNN
+F 3 "" H 5250 5400 50  0001 C CNN
+	1    5250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J2
+U 1 1 5AFD46DD
+P 5250 4900
+F 0 "J2" H 5250 5100 50  0000 C CNN
+F 1 "opt2" H 5250 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5250 4900 50  0001 C CNN
+F 3 "" H 5250 4900 50  0001 C CNN
+	1    5250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5AFD4736
+P 5000 5050
+F 0 "#PWR03" H 5000 4800 50  0001 C CNN
+F 1 "GND" H 5000 4900 50  0000 C CNN
+F 2 "" H 5000 5050 50  0001 C CNN
+F 3 "" H 5000 5050 50  0001 C CNN
+	1    5000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AFD4761
+P 5000 5550
+F 0 "#PWR04" H 5000 5300 50  0001 C CNN
+F 1 "GND" H 5000 5400 50  0000 C CNN
+F 2 "" H 5000 5550 50  0001 C CNN
+F 3 "" H 5000 5550 50  0001 C CNN
+	1    5000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J1
+U 1 1 5AFD4829
+P 3700 4750
+F 0 "J1" H 3700 5050 50  0000 C CNN
+F 1 "arduino" H 3700 4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 3700 4750 50  0001 C CNN
+F 3 "" H 3700 4750 50  0001 C CNN
+	1    3700 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 4850 4450 5500
+Wire Wire Line
+	4450 4850 3900 4850
+Wire Wire Line
+	4000 5050 4000 4950
+Wire Wire Line
+	4000 4950 3900 4950
+Wire Wire Line
+	4500 4750 4500 5000
+Wire Wire Line
+	4500 4750 3900 4750
+Wire Wire Line
+	5300 4200 4450 4200
+Wire Wire Line
+	4450 4200 4450 4650
+Wire Wire Line
+	4450 4650 3900 4650
+$Comp
+L VDD #PWR05
+U 1 1 5AFD498F
+P 5800 2900
+F 0 "#PWR05" H 5800 2750 50  0001 C CNN
+F 1 "VDD" H 5800 3050 50  0000 C CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR06
+U 1 1 5AFD49B9
+P 7300 2900
+F 0 "#PWR06" H 7300 2750 50  0001 C CNN
+F 1 "VDD" H 7300 3050 50  0000 C CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR07
+U 1 1 5AFD49E4
+P 5000 4600
+F 0 "#PWR07" H 5000 4450 50  0001 C CNN
+F 1 "VDD" H 5000 4750 50  0000 C CNN
+F 2 "" H 5000 4600 50  0001 C CNN
+F 3 "" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR08
+U 1 1 5AFD4A17
+P 4850 5250
+F 0 "#PWR08" H 4850 5100 50  0001 C CNN
+F 1 "VDD" H 4850 5400 50  0000 C CNN
+F 2 "" H 4850 5250 50  0001 C CNN
+F 3 "" H 4850 5250 50  0001 C CNN
+	1    4850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR09
+U 1 1 5AFD4A3A
+P 4000 4300
+F 0 "#PWR09" H 4000 4150 50  0001 C CNN
+F 1 "VDD" H 4000 4450 50  0000 C CNN
+F 2 "" H 4000 4300 50  0001 C CNN
+F 3 "" H 4000 4300 50  0001 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4300 4000 4550
+Wire Wire Line
+	4000 4550 3900 4550
+Wire Wire Line
+	5000 4600 5000 4800
+Wire Wire Line
+	5000 4800 5050 4800
+Wire Wire Line
+	4850 5250 4850 5300
+Wire Wire Line
+	4850 5300 5050 5300
+Wire Wire Line
+	5800 2900 5800 3100
+Wire Wire Line
+	5800 3100 5700 3100
+Wire Wire Line
+	7300 2900 7300 3100
+Wire Wire Line
+	7300 3100 7350 3100
+$Comp
+L GND #PWR010
+U 1 1 5AFD4B98
+P 6400 4550
+F 0 "#PWR010" H 6400 4300 50  0001 C CNN
+F 1 "GND" H 6400 4400 50  0000 C CNN
+F 2 "" H 6400 4550 50  0001 C CNN
+F 3 "" H 6400 4550 50  0001 C CNN
+	1    6400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5AFD4BBB
+P 5750 4950
+F 0 "#PWR011" H 5750 4700 50  0001 C CNN
+F 1 "GND" H 5750 4800 50  0000 C CNN
+F 2 "" H 5750 4950 50  0001 C CNN
+F 3 "" H 5750 4950 50  0001 C CNN
+	1    5750 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4400 6400 4550
+Wire Wire Line
+	5050 4900 5000 4900
+Wire Wire Line
+	5000 4900 5000 5050
+Wire Wire Line
+	5050 5400 5000 5400
+Wire Wire Line
+	5000 5400 5000 5550
+Wire Wire Line
+	4450 5500 5050 5500
+Wire Wire Line
+	4500 5000 5050 5000
+$EndSCHEMATC
